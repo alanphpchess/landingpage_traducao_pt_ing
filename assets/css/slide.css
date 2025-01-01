@@ -1,0 +1,153 @@
+
+.slider{
+    width: 100vw;
+    max-width: 100vw;
+    height: 650px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 135px;
+}
+.slider .list{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+
+}
+
+.active_button{
+    background-color: var(--cor-amarelo) !important;
+    color: white !important;
+}
+
+.slider .list img{
+    width: 100vw;
+    max-width: 100vw;
+    height: 505px;
+    object-fit:fill;
+}
+.slider .buttons{
+    position: absolute;
+    top: 31%;
+    left: 2%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+    background-color: var(--cor-azul);
+}
+@media screen and (max-width: 768px){
+
+    .slider{
+        width: 100vw;
+        max-width: 100vw;
+        height: 213px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        margin-top: 0px;
+    }
+
+    .slider .list img {
+        width: 100vw;
+        max-width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .slider .buttons{
+        position: absolute;
+        top: 40%;
+        left: 2%;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider .buttons img{
+        width: 45px;
+        height: 45px;
+    }
+
+
+
+    .list_container ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .form-simul-button {
+        grid-column: 1 / span 2;
+        width:100%;
+        margin: auto;
+        padding: 10px;
+        background-color: var(--cor-cinza);
+        color: white;
+        font-weight: bold;
+        border: 0;
+    }
+
+    .implantacao-imagem .img_implantacao {
+        width: 100%;
+        height: 233px !important;
+    }
+
+    .slider_list {
+        height: 232px  !important;
+    }
+
+    
+    .slider .list{
+        position: absolute;
+        width: 100%;
+        height: 213px !important;
+        left: 0;
+        top: 0;
+        display: flex;
+        transition: 1s;
+    
+    }
+}

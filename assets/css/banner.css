@@ -1,0 +1,551 @@
+.banner {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    align-items: center;
+    position: relative;
+    margin-top: 90px;
+    /* z-index: -1; */
+}
+
+.information{
+    background-image: url('../image/banner/background.png');
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--cor-branca);
+    margin-top: -20px;
+    font-family: 'regular';
+}
+
+.information p{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.information span{
+    width: 40%;
+}
+
+.icons_network {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+    background-color: var(--cor-azul);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #00456E;
+    color: rgb(232, 229, 229);
+    font-size: 0.8rem;
+    align-items: center;
+}
+
+.list-telefone{
+    margin-right: 9px;
+}
+
+.list_icons_network{
+    display: flex;
+    column-gap: 5px;
+    padding-top: 5px;
+    font-family: var(--light);
+    color: white;
+    justify-content: end;
+    align-items: center;
+
+}
+.inf_contato{
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.li_brasil{
+    margin-left: 10px;
+}
+
+.list_icons_network li{
+    list-style: none;
+    align-items: center;
+}
+
+.title-banner{
+    background-color: var(--cor-amarelo);
+    color: white;
+    /* text-transform: uppercase; */
+    padding: 10px 30px;
+    font-family: var(--semibold);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: var(--cor-amarelo);
+}
+
+.text-banner p:first-of-type {
+    font-size: 2.5rem;
+    color: white;
+    font-family: var(--semibold);
+}
+
+.banner-text-1{
+    font-family: var(--semibold); 
+    color: white;
+    font-size: 2.5rem;
+}
+
+.banner-text-1-first{
+    margin-top: 20px;
+}
+
+.banner-text-1-last{
+    margin-bottom: 14px;
+}
+
+
+
+.text-descubra p:first-of-type{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.text-descubra :nth-child(2){
+    font-size: 1.2rem;
+    color: white;
+}
+
+.text-descubra{
+  font-family: 'semibold';
+  margin-top: 10px;
+}
+
+.button-banner button{
+    background-color: transparent;
+    font-family: 'semibold';
+    color: white;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    background: var(--cor-amarelo);
+    border: 0;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+
+.banner .img-banner {
+    width: 100%;
+    height: auto;
+}
+
+.descr-banner {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    margin-left: 10%;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+
+.subtitle-banner {
+    font-family: 'medium';
+}
+
+.text-weigth {
+    font-family: 'CamptonSemiBold';
+}
+
+.form-banner {
+    position: absolute;
+    width: 300px;
+    background-color: var(--cor-azul);
+    left: 60%;
+    top: 200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: var(--verde);
+    z-index: 2;
+    padding-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.text-cadastro {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.form-banner form input {
+    height: 40px;
+    margin-bottom: 18px;
+    width: 100%;
+    background-color: var(--cor-azul);
+    border: 1px solid var(--cor-cinza);
+    border-top: 0px;
+    color: var(--cor-amarelo);
+    margin-top: 5px;
+
+}
+
+.form-banner form label {
+    margin-bottom: 5px;
+    color: var(--cor-amarelo);
+
+}
+
+.list-letter{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    column-gap: 58px;
+    font-family: var(--light);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--cor-amarelo);
+}
+
+.letter{
+    background-color: var(--cor-berge);
+}
+.formulario-cadastro ::placeholder {
+    color: #2e4159;
+    font-weight: bold;
+    margin-top: 16px;
+    font-family: var(--light);
+
+
+}
+
+.f-item3 input::placeholder{
+    padding-left: 10px;
+}
+
+
+.formulario-cadastro{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: var(--light);
+}
+
+.form-banner input,
+textarea {
+    padding: 10px;
+}
+
+.texto-campo-obrigatorio {
+    font-size: 0.8rem;
+}
+
+
+.form-banner button {
+    background: var(--cor-amarelo);
+    color: #ffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 0;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    --background-color: var(--cor-amarelo);
+    --border-size: 2px;
+    font-family: var(--bold);
+    letter-spacing: 2px;
+}
+
+.form-banner button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: var(--border-size) solid var(--background-color);
+    transition: top, left, right, bottom, 200ms ease-in-out;
+}
+
+.form-banner button:hover::before,
+.form-banner button:focus::before {
+    top: calc(var(--border-size) * -2);
+    left: calc(var(--border-size) * -2);
+    right: calc(var(--border-size) * -2);
+    bottom: calc(var(--border-size) * -2);
+}
+
+
+
+
+
+
+.texto-cadastre-se {
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.title-form-banner hr {
+    border-color: #e6e1db;
+}
+
+.title-form-banner .title-texto{
+    background: var(--cor-amarelo);
+    color:var(--cor-azul);
+    padding: 20px;
+    font-family: var(--light);
+}
+
+
+.title-form-banner .title-texto {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.texto-campo-obrigatorio {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Barlow-Light';
+}
+
+.social-icons {
+    position: fixed;
+    top: 90%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 2;
+
+}
+
+
+.icon {
+    margin-bottom: 5px;
+    transition: opacity 0.3s ease;
+    font-size: 2rem;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+
+}
+
+.icon:hover {
+    opacity: 0.7;
+}
+
+.custom-opacity {
+    opacity: 1;
+}
+
+.social-icons img {
+    width: 45px;
+    height: 45px;
+}
+
+
+.text-banner{
+    position: absolute;
+    top: 227px;
+    left: 10%;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .subtitle-section {
+        font-size: 2rem;
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .form-banner {
+        position: absolute;
+        height: 390px;
+        width: 300px;
+        background-color: var(--cor-azul);
+        left: 60%;
+        top: 200px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        justify-content: center;
+        font-size: 0.9rem;
+        color: var(--verde);
+        padding-bottom: 20px;
+        z-index: 2;
+        letter-spacing: 1px;
+    }
+
+    .form-banner label{
+        color: var(--cor-amarelo);
+    }
+
+     /* .formulario-cadastro input{
+        background: var(--cor-azul);
+        border: 1px solid var(--cor-amarelo);
+        border-top: 0px;
+     } */
+}
+
+@media only screen and (max-width: 1088px) {
+    .list-letter{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 813px) {
+
+    .title-banner {
+        font-size: 1.2rem;
+    }
+
+    .form-banner {
+        display: none;
+    }
+
+    .information span{
+        width: 100%;
+    }
+    
+
+    .banner {
+        margin-top: 0px;
+    }
+
+    .descr-banner {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content;
+        margin-left: 10%;
+        margin-top: 50px;
+        font-family: 'Barlow-Light';
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .logo-menu {
+        width: 97px;
+        height: auto;
+        left: 0;
+        padding-left: 8%;
+        margin-top: 12px;
+    }
+
+    .social-icons {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .descr-banner {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content;
+        margin-left: 10%;
+        margin-top: 0px;
+        font-family: 'Barlow-Light';
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .subtitle-section {
+        font-size: 1.2rem;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .title-section {
+        text-align: center;
+    }
+
+    .subtitle-implantacao ul {
+        list-style: none;
+ 
+    }
+    .subtitle-implantacao li{
+        font-family: var(--bold);
+    }
+
+    .subtitle-implantacao {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: #fff;
+        padding-left: 0px;
+    }
+
+    .lista-implantacao {
+        padding-left: 22px;
+        color: #C9952B;
+
+    }
+
+    .subtitle-section {
+        text-align: center;
+    }
+
+    .texto-implantacao {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .text-banner p:first-of-type {
+        font-size: 1rem;
+        color: white;
+        font-family: var(--light);
+    }
+
+    .banner-text-1 {
+        font-family: var(--light);
+        color: white;
+        font-size: 1rem;
+    }
+
+    .text-banner p:first-of-type{
+        font-size: 1rem;
+    }
+
+    .text-banner {
+        position: absolute;
+        top: 294px;
+        left: 5%;
+    }
+
+    .button-banner button{
+        display: none;
+    }
+
+    .title-banner {
+        background-color: var(--cor-amarelo);
+        color: white;
+        text-transform: uppercase;
+        padding: 15px 18px;
+        font-family: var(--semibold);
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .dots{
+        display: none;
+    }
+}
